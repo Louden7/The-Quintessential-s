@@ -1,0 +1,800 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Style Sheet.css">
+    <script src="Script Sheet.js"></script>
+</head>
+
+<body>
+    <h1>Administrative Page:</h1>
+    <br>
+    <ul class="tab">
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'homecomingCourtTab')">Homecoming Court</a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'StudentGovTab')">Student Government</a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'favoriteTeacherTab')">Favorite Teacher</a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'favoriteAdvisorTab')">Favorite Advisor</a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'constitutionalAmendTab')">Constitutional Amendments</a></li>
+        <li><a href="#" class="tablinks" onclick="logout()">Logout</a></li>
+    </ul>
+
+    <!-- change the ID's -->
+    <div id="homecomingCourtTab" class="tabcontent">
+        <h3>Homecoming Court</h3>
+        <p>
+          Select the start and end date for this poll.<br>
+          <label class="date">Start Date: </label>
+          <input type="date" name="StartDate1" id="sd1"><br>
+          <label class="date">End Date: </label>
+          <input type="date" name="EndDate1" id="ed1"><br><br>
+
+          <table width="100%" align="left">
+            <tr>
+              <td>
+                Enter the female names that will be on the ballot.
+              </td>
+              <td>
+                Enter the male names that will be on the ballot.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="v1" id="u1"><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="v2" id="u2"><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="v3" id="u3"><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="v4" id="u4"><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="v5" id="u5"><br>
+              </td>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="m1" id="n1"><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="m2" id="n2"><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="m3" id="n3"><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="m4" id="n4"><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="m5" id="n5"><br>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <button onclick="">Submit Changes</button>
+        <!-- information about each organization and Poll
+        like start and end dates, selecting the people that
+      will be shown on the ballot, submit button that applys
+    the changes and a link to the live results if wanted -->
+        </p>
+        <br>
+        <input type="checkbox" id="show_HCC_Results" onclick="showHomeComingResults()">Show/Hide Results
+        <!-- need to figure checkbox out then the rest shoushowResults()ld be copy paste -->
+        <br><br>
+        <div id="myhide1" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                Female Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="results_table_2">
+                Male Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" id="Recount_Data" name="recount" onclick="" style="margin-left:5%">Recount Vote</button>
+            <!-- need a onclock function -->
+        </div>
+    </div>
+
+    <div id="StudentGovTab" class="tabcontent">
+        <h3>Student Government</h3>
+        <p>
+          Select the start and end date for this poll.<br>
+          <label class="date">Start Date: </label>
+          <input type="date" name="StartDate2" id="sd1"><br>
+          <label class="date">End Date: </label>
+          <input type="date" name="EndDate2" id="ed1"><br><br>
+
+          <table width="100%" align="left">
+            <tr>
+              <td>
+                Enter the Presidental canadates that will be on the ballot.
+              </td>
+              <td>
+                Enter the Vice-Presidental canadates that will be on the ballot.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="p1" id=""><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="p2" id=""><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="p3" id=""><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="p4" id=""><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="p5" id=""><br><br>
+              </td>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="vp1" id=""><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="vp2" id=""><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="vp3" id=""><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="vp4" id=""><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="vp5" id=""><br><br>
+              </td>
+            </tr>
+          </table>
+
+          <table width="96%" align="left">
+            <tr>
+              <td>
+                Enter the Treasurer canadates that will be on the ballot.
+              </td>
+              <td>
+                Enter the Secretary canadates that will be on the ballot.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="t1" id="u1"><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="t2" id="u2"><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="t3" id="u3"><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="t4" id="u4"><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="t5" id="u5"><br>
+              </td>
+              <td>
+                <label class="hcc_ballot">Candidate One: </label>
+                <input type="text" name="s1" id="n1"><br>
+                <label class="hcc_ballot">Candidate Two: </label>
+                <input type="text" name="s2" id="n2"><br>
+                <label class="hcc_ballot">Candidate Three: </label>
+                <input type="text" name="s3" id="n3"><br>
+                <label class="hcc_ballot">Candidate Four: </label>
+                <input type="text" name="s4" id="n4"><br>
+                <label class="hcc_ballot">Candidate Five: </label>
+                <input type="text" name="s5" id="n5"><br>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <button onclick="">Submit Changes</button>
+        </p>
+        <br>
+        <br>
+        <input type="checkbox" id="show_Studnet_Gov_Results" onclick="showStudentGovResults()">Show/Hide Results
+        <!-- need to figure checkbox out then the rest shoushowResults()ld be copy paste -->
+        <br><br>
+        <div id="myhide2" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                President Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+
+            <div class="results_table_2">
+                Vice President Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+
+            <div class="results_table_3">
+                Treasurer Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="results_table_4">
+                Secretary Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" id="Recount_Data1" name="recount1" onclick="" style="margin-left:5%">Recount Vote</button>
+        </div>
+        &nbsp;
+        <!-- This (&nbsp;) forces a space so that the dynamic outline of the tab div works correctly -->
+    </div>
+
+    <div id="favoriteTeacherTab" class="tabcontent">
+        <h3>Favorite Teacher</h3>
+        <p>
+          Select the start and end date for this poll.<br>
+          <label class="date">Start Date: </label>
+          <input type="date" name="StartDate3" id="sd1"><br>
+          <label class="date">End Date: </label>
+          <input type="date" name="EndDate3" id="ed1"><br><br>
+
+          <br>
+          <button onclick="">Submit Changes</button>
+        </p>
+    </div>
+
+    <div id="favoriteAdvisorTab" class="tabcontent">
+        <h3>Favorite Advisor</h3>
+        <p>
+          Select the start and end date for this poll.<br>
+          <label class="date">Start Date: </label>
+          <input type="date" name="StartDate4" id="sd1"><br>
+          <label class="date">End Date: </label>
+          <input type="date" name="EndDate4" id="ed1"><br><br>
+
+          <br>
+          <button onclick="">Submit Changes</button>
+        </p>
+    </div>
+
+    <div id="constitutionalAmendTab" class="tabcontent">
+        <h3>Constitutional Amendments</h3>
+        <p>
+          Select the start and end date for this poll.<br>
+          <label class="date">Start Date: </label>
+          <input type="date" name="StartDate5" id="sd1"><br>
+          <label class="date">End Date: </label>
+          <input type="date" name="EndDate5" id="ed1"><br><br>
+
+          <br>
+          <button onclick="">Submit Changes</button>
+        </p>
+        <br><br>
+
+        <div class="results-table">
+            <table class="results">
+                <tr class="results">
+                    <td class="results">
+                        Bike Brand:
+                    </td>
+                    <td class="results">
+                        Fraction:
+                    </td>
+                    <td class="results">
+                        Percent:
+                    </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Beta
+                    </td>
+                    <td class="results">
+
+                    </td>
+                    <td class="results">
+
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Honda
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Husqvarna
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                    </td>
+                    <td class="results">
+                        <!-- Percent Code -->
+                    </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Kawasaki
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                    </td>
+                    <td class="results">
+                        <!-- Percent Code -->
+                    </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        KTM
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                    </td>
+                    <td class="results">
+                        <!-- Percent Code -->
+                    </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Suzuki
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                    </td>
+                    <td class="results">
+                        <!-- Percent Code -->
+                    </td>
+                </tr>
+                <tr class="results">
+                    <td class="results">
+                        Yamaha
+                    </td>
+                    <td class="results">
+                        <!-- Fraction Code-->
+                    </td>
+                    <td class="results">
+                        <!-- Percent Code -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

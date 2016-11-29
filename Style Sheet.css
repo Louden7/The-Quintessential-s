@@ -1,0 +1,202 @@
+div.spacing {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+body.login_page {
+    background-image: url("Pictures/Project Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+div.parallax_1 {
+    background-image: url("Pictures/Crown.png");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+div.parallax_2 {
+    background-image: url("Pictures/SGA.png");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+div.parallax_3 {
+    background-image: url("Pictures/favTeacher.jpg");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+div.parallax_4 {
+    background-image: url("Pictures/favAdvisor.png");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+div.parallax_5 {
+    background-image: url("Pictures/constitution.jpg");
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+div.dates {
+    margin-right: 44%;
+    text-align: right;
+}
+
+div.logout_button {
+    margin-left: 90%;
+    margin-top: 10%;
+    position: fixed;
+}
+
+button.student_logout {
+    border-radius: 50%;
+}
+
+label.date {
+    display: inline-block;
+    width: 78px;
+}
+
+label.hcc_ballot {
+    display: inline-block;
+    width: 125px;
+}
+
+table.results, td.results, th.results {
+    border-style: solid;
+    border-color: grey;
+    text-align: center;
+    border-width: thin;
+    margin-top: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left: 3px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+div.results_table_1 {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+div.results_table_2 {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    float: right;
+}
+
+div.results_table_3 {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+div.results_table_4 {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    float: right;
+}
+
+
+/*
+/*
+/* Added For Tabs in Admin Page*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Float the list items side by side */
+
+ul.tab li {
+    float: left;
+}
+
+
+/* Style the links inside the list items */
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 28px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of links on hover */
+
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
