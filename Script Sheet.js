@@ -96,3 +96,30 @@
          document.getElementById("myhide2").style.display = "none";
      }
  }
+
+ function showFavoriteTeacherResults() {
+     var checkStatus = document.getElementById("show_Favorite_Teacher_Results");
+     if (checkStatus.checked) {
+         document.getElementById("myhide3").style.display = "block";
+     } else {
+         document.getElementById("myhide3").style.display = "none";
+     }
+ }
+
+ function showFavoriteAdvisorResults() {
+     var checkStatus = document.getElementById("show_Favorite_Advisor_Results");
+     if (checkStatus.checked) {
+         document.getElementById("myhide4").style.display = "block";
+     } else {
+         document.getElementById("myhide4").style.display = "none";
+     }
+ }
+
+ function showConstitutionalAmendmentsResults() {
+     var checkStatus = document.getElementById("show_Constitutional_Amendments_Results");
+     if (checkStatus.checked) {
+         document.getElementById("myhide5").style.display = "block";
+     } else {
+         document.getElementById("myhide5").style.display = "none";
+     }
+ }
