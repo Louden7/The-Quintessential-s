@@ -5,14 +5,15 @@
      var HCCstart = document.getElementById("sd1").value;
  }
  // This function gives a live date that changes in real time.
+ /**
  window.onload = function() {
      var d = new Date();
      var date = "Today's Date: " + (d.getMonth() + 1) + "/" + d.getDate() + "/" + (d.getFullYear() - 2000);
      var xx = date.replace("/", "");
      var numDate = xx.replace("/", "");
-     document.getElementById("startDate").innerHTML = "Poll Start Date: ";
-     document.getElementById("endDate").innerHTML = "Poll End Date: ";
-     document.getElementById("todaysDate").innerHTML = date;
+     //document.getElementById("startDate").innerHTML = "Poll Start Date: ";
+     //document.getElementById("endDate").innerHTML = "Poll End Date: ";
+     //document.getElementById("todaysDate").innerHTML = date;
      //document.getElementById("check1").innerHTML = numDate;
 
      if (HCCstart <= numDate && HCCend >= numDate) {
@@ -23,6 +24,7 @@
          document.getElementById("check2").innerHTML = "Vote is already over!";
      }
  }
+ **/
 
  // This function validates if the login information is valid and if the user is a student or admin.
  function validate() {
@@ -129,4 +131,13 @@
      } else {
          document.getElementById("myhide5").style.display = "none";
      }
+ }
+ 
+ function showConstitutionalAmendTab(){
+	 var navbar = document.getElementById("navbar");
+	 var bullet = document.createElement("li");
+	 
+	 bullet.innerHTML = "<a href=\"#\" class=\"tablinks\" onclick=\"openCity(event, 'constitutionalAmendTab')\">Constitutional Amendments<\/a>";
+	 navbar.insertBefore(bullet, navbar.children[4]);
+	 //navbar.appendChild(bullet);
  }

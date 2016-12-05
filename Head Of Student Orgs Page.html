@@ -9,12 +9,13 @@
 <body>
     <h1>Head Of Student Organizations Page</h1>
     <br>
-    <ul class="tab">
+    <ul id="navbar" class="tab">
         <li><a href="#" class="tablinks" onclick="openCity(event, 'homecomingCourtTab')">Homecoming Court</a></li>
         <li><a href="#" class="tablinks" onclick="openCity(event, 'StudentGovTab')">Student Government</a></li>
         <li><a href="#" class="tablinks" onclick="openCity(event, 'favoriteTeacherTab')">Favorite Teacher</a></li>
         <li><a href="#" class="tablinks" onclick="openCity(event, 'favoriteAdvisorTab')">Favorite Advisor</a></li>
-        <li><a href="#" class="tablinks" onclick="openCity(event, 'constitutionalAmendTab')">Constitutional Amendments</a></li>
+        <!--<li><a href="#" class="tablinks" onclick="openCity(event, 'constitutionalAmendTab')">Constitutional Amendments</a></li>-->
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'createElectionTab')">Create Election</a></li>
         <li><a href="#" class="tablinks" onclick="logout()">Logout</a></li>
     </ul>
 
@@ -795,6 +796,15 @@
             </div>
         </div>
     </div>
+	<div id="createElectionTab" class="tabcontent">
+        <h3>Create Election</h3>
+        <p>
+          Enter an Election Name:
+          <input class="text" name="commish">
+          <br>
+          <button onclick="showConstitutionalAmendTab()">Create</button>
+        </p>
+	</div>
 
 </body>
 
