@@ -42,6 +42,13 @@
          document.getElementById("help_message").innerHTML = '';
          window.location.href = "Group Project.html";
      }
+     // This if statement is for the HSO
+     else if (username == "Jason" && password == "Schafer") {
+         document.getElementById("Login").value = '';
+         document.getElementById("login_error").innerHTML = '';
+         document.getElementById("help_message").innerHTML = '';
+         window.location.href = "Head Of Student Orgs Page.html";
+     }
      // This if statement does not alow the user to login if an error was made or the user is not aloud to login
      else {
          document.getElementById("login_error").innerHTML = "Invalid Login or Password";
