@@ -24,8 +24,178 @@
           Enter an Election Commissioner:
           <input class="text" name="commish">
           <br>
+          <button onclick="">Certify</button>
+          <br><br>
+          Disqualify Voter:
+          <input class="text" name="remove">
+          <button onclick="" name="remov">Disqualify</button>
         </p>
-        <button onclick="">Submit Changes</button>
+        <input type="checkbox" id="show_HCC_Results" onclick="showHomeComingResults()">Show/Hide Results
+        <!-- need to figure checkbox out then the rest shoushowResults()ld be copy paste -->
+        <br><br>
+        <div id="myhide1" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                Female Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="results_table_2">
+                Male Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" id="Recount_Data" name="recount" onclick="" style="margin-left:5%">Recount Vote</button>
+        </div>
     </div>
 
     <div id="StudentGovTab" class="tabcontent">
@@ -34,8 +204,343 @@
           Enter an Election Commissioner:
           <input class="text" name="commish">
           <br>
+          <button onclick="">Certify</button>
+          <br><br>
+          Disqualify Voter:
+          <input class="text" name="remove">
+          <button onclick="" name="remov">Disqualify</button>
         </p>
-        <button onclick="">Submit Changes</button>
+        <input type="checkbox" id="show_Studnet_Gov_Results" onclick="showStudentGovResults()">Show/Hide Results
+        <!-- need to figure checkbox out then the rest shoushowResults()ld be copy paste -->
+        <br><br>
+        <div id="myhide2" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                President Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+
+            <div class="results_table_2">
+                Vice President Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+
+            <div class="results_table_3">
+                Treasurer Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="results_table_4">
+                Secretary Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" id="Recount_Data1" name="recount1" onclick="" style="margin-left:5%">Recount Vote</button>
+        </div>
+        &nbsp;
+        <!-- This (&nbsp;) forces a space so that the dynamic outline of the tab div works correctly -->
     </div>
 
     <div id="favoriteTeacherTab" class="tabcontent">
@@ -44,8 +549,97 @@
           Enter an Election Commissioner:
           <input class="text" name="commish">
           <br>
+          <button onclick="">Certify</button>
+          <br><br>
+          Disqualify Voter:
+          <input class="text" name="remove">
+          <button onclick="" name="remov">Disqualify</button>
         </p>
-        <button onclick="">Submit Changes</button>
+        <input type="checkbox" id="show_Favorite_Teacher_Results" onclick="showFavoriteTeacherResults()">Show/Hide Results
+        <br><br>
+        <div id="myhide3" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" id="Recount_Data" name="recount" onclick="" style="margin-left:-66%">Recount Vote</button>
+            </div>
+        </div>
     </div>
 
     <div id="favoriteAdvisorTab" class="tabcontent">
@@ -54,8 +648,97 @@
           Enter an Election Commissioner:
           <input class="text" name="commish">
           <br>
+          <button onclick="">Certify</button>
+          <br><br>
+          Disqualify Voter:
+          <input class="text" name="remove">
+          <button onclick="" name="remov">Disqualify</button>
         </p>
-        <button onclick="">Submit Changes</button>
+        <input type="checkbox" id="show_Favorite_Advisor_Results" onclick="showFavoriteAdvisorResults()">Show/Hide Results
+        <br><br>
+        <div id="myhide4" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Candidate:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 1.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 2.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 3.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 4.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 5.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Candidate 6.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                        </td>
+                        <td class="results">
+                            <!-- Percent Code -->
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" id="Recount_Data" name="recount" onclick="" style="margin-left:-66%">Recount Vote</button>
+            </div>
+        </div>
     </div>
 
     <div id="constitutionalAmendTab" class="tabcontent">
@@ -64,8 +747,53 @@
           Enter an Election Commissioner:
           <input class="text" name="commish">
           <br>
+          <button onclick="">Certify</button>
+          <br><br>
+          Disqualify Voter:
+          <input class="text" name="remove">
+          <button onclick="" name="remov">Disqualify</button>
         </p>
-        <button onclick="">Submit Changes</button>
+        <input type="checkbox" id="show_Constitutional_Amendments_Results" onclick="showConstitutionalAmendmentsResults()">Show/Hide Results
+        <br><br>
+        <div id="myhide5" style="width:100%; height:300px; margin-left:-4%; display:none">
+            <div class="results_table_1">
+                Poll Results
+                <table style="margin: 0 auto" class="results">
+                    <tr class="results">
+                        <td class="results">
+                            Answer:
+                        </td>
+                        <td class="results">
+                            Fractional Vote:
+                        </td>
+                        <td class="results">
+                            Percentage Vote:
+                        </td>
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            Yes.
+                        </td>
+                        <td class="results">
+
+                        </td>
+                        <td class="results">
+
+                    </tr>
+                    <tr class="results">
+                        <td class="results">
+                            No.
+                        </td>
+                        <td class="results">
+                            <!-- Fraction Code-->
+                            <td class="results">
+                                <!-- Percent Code -->
+                            </td>
+                    </tr>
+                </table>
+                <button type="button" id="Recount_Data" name="recount" onclick="" style="margin-left:-60%">Recount Vote</button>
+            </div>
+        </div>
     </div>
 
 </body>
