@@ -5,21 +5,21 @@
      var HCCstart = document.getElementById("sd1").value;
  }
  // This function gives a live date that changes in real time.
- /**
+ 
  window.onload = function() {
      var d = new Date();
      var date = "Today's Date: " + (d.getMonth() + 1) + "/" + d.getDate() + "/" + (d.getFullYear() - 2000);
      var xx = date.replace("/", "");
      var numDate = xx.replace("/", "");
-<<<<<<< HEAD
+
      document.getElementById("startDate").innerHTML = "Poll Start Date: 12/1/16";
      document.getElementById("endDate").innerHTML = "Poll End Date: 12/30/16";
      document.getElementById("todaysDate").innerHTML = date;
-=======
+
      //document.getElementById("startDate").innerHTML = "Poll Start Date: ";
      //document.getElementById("endDate").innerHTML = "Poll End Date: ";
      //document.getElementById("todaysDate").innerHTML = date;
->>>>>>> origin/master
+
      //document.getElementById("check1").innerHTML = numDate;
 
      if (HCCstart <= numDate && HCCend >= numDate) {
@@ -30,7 +30,6 @@
          document.getElementById("check2").innerHTML = "Vote is already over!";
      }
  }
- **/
 
  // This function validates if the login information is valid and if the user is a student or admin.
  function validate() {
@@ -142,7 +141,6 @@
          document.getElementById("myhide5").style.display = "none";
      }
  }
-<<<<<<< HEAD
 
  function checkHomecomingCourtVote() {
      if (document.getElementById("a1").checked == true || document.getElementById("a2").checked == true ||
@@ -175,6 +173,7 @@
          }
  }
 
+
  function checkConstitutionalVote() {
      if (document.getElementById("e1").checked == true || document.getElementById("e2").checked == true) {
          document.getElementById("output_e").innerHTML = "<input type='submit' value='Vote'>";
@@ -185,7 +184,7 @@
 
  function goBack() {
      window.location.replace("Group Project.html");
-=======
+ }
  
  function showConstitutionalAmendTab(){
 	 var navbar = document.getElementById("navbar");
@@ -194,5 +193,4 @@
 	 bullet.innerHTML = "<a href=\"#\" class=\"tablinks\" onclick=\"openCity(event, 'constitutionalAmendTab')\">Constitutional Amendments<\/a>";
 	 navbar.insertBefore(bullet, navbar.children[4]);
 	 //navbar.appendChild(bullet);
->>>>>>> origin/master
  }
