@@ -17,7 +17,7 @@
         <p id="check2"></p>
     </div>
 
-    <form action="Response Recorded.html" method="post" align="center">
+    <form action="Thanks for Voting.php" method="post" align="center">
         <table border="1" width="60%" height="150" align="center">
             <tr>
                 <td>
@@ -29,13 +29,13 @@
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="FemaleCourtVote" value="one"> Yes <br>
-                    <input type="radio" name="FemaleCourtVote" value="two"> No <br>
+                    <input id="e1" type="radio" name="ConstitutionalVote" onclick="checkConstitutionalVote()" value="yes"> Yes <br>
+                    <input id="e2" type="radio" name="ConstitutionalVote" onclick="checkConstitutionalVote()" value="no"> No <br>
                 </td>
             </tr>
         </table>
+        <p id="output_e"></p>
         <br>
-        <button onclick="">Submit</button>
     </form>
 
 </body>

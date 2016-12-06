@@ -17,7 +17,7 @@
         <p id="check2"></p>
     </div>
 
-    <form action="" method="post" align="center">
+    <form action="Thanks for Voting.php" method="post" align="center">
         <table border="1" width="60%" height="150" align="center">
             <tr>
                 <td>
@@ -29,27 +29,45 @@
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox" name="FemaleCourtVote" value="one"> Jesse <br>
-                    <input type="checkbox" name="FemaleCourtVote" value="two"> Michelle <br>
-                    <input type="checkbox" name="FemaleCourtVote" value="three"> Olivia <br>
-                    <input type="checkbox" name="FemaleCourtVote" value="four"> Ashley <br>
-                    <input type="checkbox" name="FemaleCourtVote" value="five"> Nellie <br>
-                    <input type="checkbox" name="FemaleCourtVote" value="six"> Alex <br>
+<<<<<<< HEAD
+                    <input id="a1" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="one"> Abbie <br>
+                    <input id="a2" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="two"> Elizabeth <br>
+                    <input id="a3" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="three"> Leila <br>
+                    <input id="a4" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="four"> Kailyn <br>
+                    <input id="a5" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="five"> Malia <br>
+                    <input id="a6" type="radio" name="FemaleCourtVote" onclick="checkHomecomingCourtVote()" value="six">
                     <input type="text" name="FemaleWriteIn" placeholder="Write-in Vote"> <br>
                 </td>
                 <td>
-                    <input type="checkbox" name="MaleCourtVote" value="one"> Mark <br>
-                    <input type="checkbox" name="MaleCourtVote" value="two"> Jack <br>
-                    <input type="checkbox" name="MaleCourtVote" value="three"> John <br>
-                    <input type="checkbox" name="MaleCourtVote" value="four"> Josh <br>
-                    <input type="checkbox" name="MaleCourtVote" value="five"> Lucas <br>
-                    <input type="checkbox" name="MaleCourtVote" value="six"> Patrick <br>
+                    <input id="a7" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="one"> Levi <br>
+                    <input id="a8" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="two"> Barrett <br>
+                    <input id="a9" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="three"> Braden <br>
+                    <input id="a10" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="four"> Dwayne <br>
+                    <input id="a11" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="five"> Drake <br>
+                    <input id="a12" type="radio" name="MaleCourtVote" onclick="checkHomecomingCourtVote()" value="six">
+=======
+                    <input type="checkmark" name="FemaleCourtVote" value="one"> Name 1 <br>
+                    <input type="checkmark" name="FemaleCourtVote" value="two"> Name 2 <br>
+                    <input type="checkmark" name="FemaleCourtVote" value="three"> Name 3 <br>
+                    <input type="checkmark" name="FemaleCourtVote" value="four"> Name 4 <br>
+                    <input type="checkmark" name="FemaleCourtVote" value="five"> Name 5 <br>
+                    <input type="checkmark" name="FemaleCourtVote" value="six">
+                    <input type="text" name="FemaleWriteIn" placeholder="Write-in Vote"> <br>
+                </td>
+                <td>
+                    <input type="checkmark" name="MaleCourtVote" value="one"> Name 1 <br>
+                    <input type="checkmark" name="MaleCourtVote" value="two"> Name 2 <br>
+                    <input type="checkmark" name="MaleCourtVote" value="three"> Name 3 <br>
+                    <input type="checkmark" name="MaleCourtVote" value="four"> Name 4 <br>
+                    <input type="checkmark" name="MaleCourtVote" value="five"> Name 5 <br>
+                    <input type="checkmark" name="MaleCourtVote" value="six">
+>>>>>>> origin/master
                     <input type="text" name="MaleWriteIn" placeholder="Write-in Vote"> <br>
                 </td>
             </tr>
         </table>
+        <p id="output_a"></p>
         <br>
-        <button type="button" onclick="submitBallot2()">Submit</button>
     </form>
 
 </body>
