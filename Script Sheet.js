@@ -88,6 +88,10 @@
      }
  }
 
+  function submitBallot2() {
+         window.location.replace("Response Recorded.html");
+ }
+ 
  function showHomeComingResults() {
      var checkStatus = document.getElementById("show_HCC_Results");
      if (checkStatus.checked) {
