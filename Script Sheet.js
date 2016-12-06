@@ -10,8 +10,8 @@
      var date = "Today's Date: " + (d.getMonth() + 1) + "/" + d.getDate() + "/" + (d.getFullYear() - 2000);
      var xx = date.replace("/", "");
      var numDate = xx.replace("/", "");
-     document.getElementById("startDate").innerHTML = "Poll Start Date: ";
-     document.getElementById("endDate").innerHTML = "Poll End Date: ";
+     document.getElementById("startDate").innerHTML = "Poll Start Date: 12/1/16";
+     document.getElementById("endDate").innerHTML = "Poll End Date: 12/30/16";
      document.getElementById("todaysDate").innerHTML = date;
      //document.getElementById("check1").innerHTML = numDate;
 
@@ -129,4 +129,47 @@
      } else {
          document.getElementById("myhide5").style.display = "none";
      }
+ }
+
+ function checkHomecomingCourtVote() {
+     if (document.getElementById("a1").checked == true || document.getElementById("a2").checked == true ||
+         document.getElementById("a3").checked == true || document.getElementById("a4").checked == true ||
+         document.getElementById("a5").checked == true || document.getElementById("a6").checked == true)
+         if (
+             document.getElementById("a7").checked == true || document.getElementById("a8").checked == true ||
+             document.getElementById("a9").checked == true || document.getElementById("a10").checked == true ||
+             document.getElementById("a11").checked == true || document.getElementById("a12").checked == true) {
+             document.getElementById("output_a").innerHTML = "<input type='submit' value='Vote' onclick='submitBallot()'>"
+         }
+ }
+
+ function checkStudentGovVote() {
+     if (document.getElementById("y1").checked == true || document.getElementById("y2").checked == true ||
+         document.getElementById("y3").checked == true || document.getElementById("y4").checked == true ||
+         document.getElementById("y5").checked == true || document.getElementById("y6").checked == true)
+         if (document.getElementById("y7").checked == true || document.getElementById("y8").checked == true ||
+             document.getElementById("y9").checked == true || document.getElementById("y10").checked == true ||
+             document.getElementById("y11").checked == true || document.getElementById("y12").checked == true) {
+             if (document.getElementById("z1").checked == true || document.getElementById("z2").checked == true ||
+                 document.getElementById("z3").checked == true || document.getElementById("z4").checked == true ||
+                 document.getElementById("z5").checked == true || document.getElementById("z6").checked == true) {
+                 if (document.getElementById("z7").checked == true || document.getElementById("z8").checked == true ||
+                     document.getElementById("z9").checked == true || document.getElementById("z10").checked == true ||
+                     document.getElementById("z11").checked == true || document.getElementById("z12").checked == true) {
+                     document.getElementById("output_b").innerHTML = "<input type='submit' value='Vote' onclick='submitBallot()'>"
+                 }
+             }
+         }
+ }
+
+ function checkConstitutionalVote() {
+     if (document.getElementById("e1").checked == true || document.getElementById("e2").checked == true) {
+         document.getElementById("output_e").innerHTML = "<input type='submit' value='Vote'>";
+     } else {
+         document.getElementById("output_e").innerHTML = "INVALID";
+     }
+ }
+
+ function goBack() {
+     window.location.replace("Group Project.html");
  }
