@@ -84,7 +84,7 @@
 
  function submitBallot() {
      if (document.getElementsByClassName("FemaleCourtVote").checked && document.getElementsByClassName("MaleCourtVote").checked) {
-         window.location.replace("Group Project.html");
+         window.location.replace("Response Recorded.html");
      }
  }
 
