@@ -5,21 +5,21 @@
      var HCCstart = document.getElementById("sd1").value;
  }
  // This function gives a live date that changes in real time.
- /**
+ 
  window.onload = function() {
      var d = new Date();
      var date = "Today's Date: " + (d.getMonth() + 1) + "/" + d.getDate() + "/" + (d.getFullYear() - 2000);
      var xx = date.replace("/", "");
      var numDate = xx.replace("/", "");
-<<<<<<< HEAD
+
      document.getElementById("startDate").innerHTML = "Poll Start Date: 12/1/16";
      document.getElementById("endDate").innerHTML = "Poll End Date: 12/30/16";
      document.getElementById("todaysDate").innerHTML = date;
-=======
+
      //document.getElementById("startDate").innerHTML = "Poll Start Date: ";
      //document.getElementById("endDate").innerHTML = "Poll End Date: ";
      //document.getElementById("todaysDate").innerHTML = date;
->>>>>>> origin/master
+
      //document.getElementById("check1").innerHTML = numDate;
 
      if (HCCstart <= numDate && HCCend >= numDate) {
@@ -30,7 +30,6 @@
          document.getElementById("check2").innerHTML = "Vote is already over!";
      }
  }
- **/
 
  // This function validates if the login information is valid and if the user is a student or admin.
  function validate() {
@@ -94,6 +93,10 @@
      }
  }
 
+  function submitBallot2() {
+         window.location.replace("Response Recorded.html");
+ }
+ 
  function showHomeComingResults() {
      var checkStatus = document.getElementById("show_HCC_Results");
      if (checkStatus.checked) {
@@ -169,6 +172,7 @@
              }
          }
  }
+
 
  function checkConstitutionalVote() {
      if (document.getElementById("e1").checked == true || document.getElementById("e2").checked == true) {
