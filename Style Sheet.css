@@ -146,6 +146,7 @@ body {
 }
 
 ul.tab {
+    width: 90%;
     list-style-type: none;
     margin-left: 2.5%;
     margin-right: 2.5%;

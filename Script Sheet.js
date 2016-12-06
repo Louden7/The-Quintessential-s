@@ -138,7 +138,6 @@
          document.getElementById("myhide5").style.display = "none";
      }
  }
-<<<<<<< HEAD
 
  function checkHomecomingCourtVote() {
      if (document.getElementById("a1").checked == true || document.getElementById("a2").checked == true ||
@@ -181,14 +180,12 @@
 
  function goBack() {
      window.location.replace("Group Project.html");
-=======
- 
- function showConstitutionalAmendTab(){
-	 var navbar = document.getElementById("navbar");
-	 var bullet = document.createElement("li");
-	 
-	 bullet.innerHTML = "<a href=\"#\" class=\"tablinks\" onclick=\"openCity(event, 'constitutionalAmendTab')\">Constitutional Amendments<\/a>";
-	 navbar.insertBefore(bullet, navbar.children[4]);
-	 //navbar.appendChild(bullet);
->>>>>>> origin/master
+ }
+
+ function showConstitutionalAmendTab() {
+     var navbar = document.getElementById("navbar");
+     var bullet = document.createElement("li");
+
+     bullet.innerHTML = "<a href=\"#\" class=\"tablinks\" onclick=\"openCity(event, 'constitutionalAmendTab')\">Constitutional Amendments<\/a>";
+     navbar.insertBefore(bullet, navbar.children[4]);
  }
